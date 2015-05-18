@@ -1,0 +1,37 @@
+name: Windup
+description: A clean theme for Drupal 8
+core: 8.0.x
+type: theme
+screenshot: screenshot.png
+
+# Remove unwanted CSS.
+stylesheets-remove:
+  - core/modules/system/css/system.theme.css
+  - core/modules/system/css/system.menus.css
+
+# Stylesheets
+#
+# Don't add any external libraries (e.g. normalize.css) here, use bower and
+# grunt wiredep (see README.md)
+
+# DO NOT REMOVE OR EDIT BETWEEN THESE LINES
+# bower:css
+# endbower
+
+# JavaScripts
+#
+# Don't add any external libraries (e.g. enquire, masonry etc) here, use bower
+# and grunt wiredep (see README.md)
+
+# DO NOT REMOVE OR EDIT BETWEEN THESE LINES
+# bower:js
+# endbower
+
+libraries:
+    - windup/global-styling
+
+regions:
+  - header: Header
+  - help: Help
+  - content: Content
+  - footer: Footer
